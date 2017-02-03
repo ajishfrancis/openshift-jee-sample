@@ -9,6 +9,7 @@ function restore_saved_artifacts() {
   if [ -f /tmp/artifacts/maven.tar.gz ]; then
     pushd / &> /dev/null
     echo -n "Restoring saved artifacts from prior build..."
+    echo -n "Restoring saved artifacts from prior build successfullyyyyyyyyyyyyyyyyyyyy..."
     tar zxf /tmp/artifacts/maven.tar.gz
     echo "...done"
     popd &> /dev/null
